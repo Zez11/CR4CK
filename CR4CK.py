@@ -231,35 +231,35 @@ def menu():
     print('%s-------------------------------------------------------------------------------------'%(O))
     print(' %s[%s+%s] %sAuhtor Script : %sMbokey Bhizer X Reall X ZEZ11|'%(O,H,O,N,K))
     print('%s---------------------------------------------------------------------------'%(O))
-    print(" %s[%s+%s] %sNama     :                                      |%s"%(O,H,O,N,mbokey))
-    print(" %s[%s+%s] %sID            :                                      |%s"%(O,H,O,N,ganteng))
-    print(" %s[%s+%s] %sKey         :                                      |%s"%(O,H,O,N,key))
+    print(" %s[%s+%s] %sNama     :                                      |%s|"%(O,H,O,N,mbokey))
+    print(" %s[%s+%s] %sID            :                                |%s|"%(O,H,O,N,ganteng))
+    print(" %s[%s+%s] %sKey         :                                   |%s|"%(O,H,O,N,key))
  #   print(" %s[%s+%s] %sTgl. Lahir  :                                 |%s"%(O,H,O,N,ttl))
     print('%s---------------------------------------------------------------------------'%(O))
-    print(" %s[%s+%s] %sMasa berlaku :                            |%s-%s"%(O,H,O,N,buulan,ttgal))
+    print(" %s[%s+%s] %sMasa berlaku :|%s-%s"%(O,H,O,N,buulan,ttgal))
     print('%s==================================
-    print(" %s[%s+%s] %sIP address   :                               |%s"%(O,H,O,N,IP_address))
+    print(" %s[%s+%s] %sIP address  : |%s"%(O,H,O,N,IP_address))
     print('%s==================================
-    print(" %s[%s+%s] %sNegara Anda  :                            |%s"%(O,H,O,N,negara))
-    print('%s ==================================
-    print(" %s[%s1%s]. %scrack teman/publik                   |"%(O,H,O,N))
+    print(" %s[%s+%s] %sNegara Anda  :|%s"%(O,H,O,N,negara))
+    print('%s==================================
+    print(" %s[%s1%s]. %scrack teman/publik|"%(O,H,O,N))
     print('%s --------------------------------------------------------------------------
-    print(" %s[%s2%s]. %sCrack Masaal [%s10%s].           |"%(O,H,O,N,H,N))
+    print(" %s[%s2%s]. %sCrack Masaal [%s10%s]|"%(O,H,O,N,H,N))
     print('%s --------------------------------------------------------------------------
-    print(" %s[%s3%s] %sCrack Follow publik                    |"%(O,H,O,N))
+    print(" %s[%s3%s] %sCrack Follow publik|"%(O,H,O,N))
+    print('%s--------------------------------------------------------------------------
+    print(" %s[%s4%s]. %ssetting user agent|"%(O,H,O,N))
     print('%s --------------------------------------------------------------------------
-    print(" %s[%s4%s]. %ssetting user agent                     |"%(O,H,O,N))
+    print(" %s[%s5%s]. %sGed data target|"%(O,H,O,N))
+    print('%s--------------------------------------------------------------------------
+    print(" %s[%s6%s]. %sInfo Script Crack FB|"%(O,H,O,N))
     print('%s --------------------------------------------------------------------------
-    print(" %s[%s5%s]. %sGed data target                         |"%(O,H,O,N))
+    print(" %s[%s7%s]. %scek opsi akun cp|"%(O,H,O,N))
+    print('%s--------------------------------------------------------------------------
+    print(" %s[%s8%s]. %slihat hasil crack|"%(O,H,O,N))
     print('%s --------------------------------------------------------------------------
-    print(" %s[%s6%s]. %sInfo Script Crack Fb                  |"%(O,H,O,N))
-    print('%s --------------------------------------------------------------------------
-    print(" %s[%s7%s]. %scek opsi akun cp                       |"%(O,H,O,N))
-    print('%s --------------------------------------------------------------------------
-    print(" %s[%s8%s]. %slihat hasil crack                         |"%(O,H,O,N))
-    print('%s --------------------------------------------------------------------------
-    print(" %s[%s0%s]. %slogout %s(%shapus token%s)  |"%(O,H,O,N,O,M,O))
-    print('%s---------------------------------------------------------------------------'%(O))
+    print(" %s[%s0%s]. %slogout %s(%shapus token%s)|"%(O,H,O,N,O,M,O))
+    print---------------------------------------------------------------------------
     asw = input(" %s[%s?%s] %spilih menu : %s"%(O,H,O,N,H))
     if asw == "":
     	menu()
@@ -280,10 +280,9 @@ def menu():
     elif asw == "3":
     	follow()
     elif asw == "0":
-    	os.system('rm -f token.txt')
-    	print('%s---------------------------------------------------------------------------------------------------------'%(O))
+    	os.system('rm -f token.txt)
+    	print'%s---------------------------------------------------------------------------------------------------------'%(O))
     	jalan(" %s[%sâœ“%s] %sberhasil menghapus token "%(O,H,O,N))
-        print('%s ---------------------------------------------------------------------------------------------------------'%(O))
     	exit()
     else:
     	jalan(" %s[%s!%s] %spilih jawaban dengan bener ! "%(O,H,O,K))
