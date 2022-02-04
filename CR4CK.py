@@ -171,17 +171,17 @@ ____        __  ______  ____
 def tokenz():
 	os.system('clear')
 	try:
-		token = open(token.txt, 'r')
+		token = open('token.txt', 'r')
 		menu()
 	except (KeyError, IOError):
 		os.system('clear')
 		logo()
-		print('-------------------------------------------------------')
+		print('Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€')
 		token = input(' [?] token : ')
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
 			a = json.loads(otw.text)
-			zedd = open(token.txt, 'w')
+			zedd = open('token.txt', 'w')
 			zedd.write(token)
 			zedd.close()
 			bot()
@@ -213,7 +213,7 @@ def menu():
     global token
     os.system('clear')
     try:
-        token = open(tokenz.txt, 'r').read()
+        token = open('token.txt', 'r').read()
         otw = requests.get('https://graph.facebook.com/me/?access_token=' + token)
         a = json.loads(otw.text)
         mbokey = a['name']
@@ -223,45 +223,41 @@ def menu():
         os.system('clear')
         print("\n %s[!] token kadaluwarsa!"%(M))
         os.system('rm -f token.txt')
-        token()
+        tokenz()
     except requests.exceptions.ConnectionError:
         exit(" %s[!] anda tidak terhubung ke internet!"%(M))
 
     logo()
-    print('%s-------------------------------------------------------'%(O))
-    print(' %s[%s+%s] %sAuhtor Script : %sMbokey Bhizer X Reall |'%(O,H,O,N,K))
-    print('%s-------------------------------------------------------'%(O))
-    print('%s-------------------------------------------------------'%(O))
-    print(" %s[%s+%s] %sNama        : |%s"%(O,H,O,N,mbokey))
-    print('%s -------------------------------------------------------'%(O))
+    print('%sÏ€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€'%(O))
+    print(' %s[%s+%s] %sAuhtor Script : %sMbokey Bhizer X Reall'%(O,H,O,N,K))
+    print('%sÏ€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€'%(O))
+    print(" %s[%s+%s] %sNama        : %s"%(O,H,O,N,mbokey))
     print(" %s[%s+%s] %sID          : %s"%(O,H,O,N,ganteng))
-    print('%s -------------------------------------------------------'%(O))
     print(" %s[%s+%s] %sKey         : %s"%(O,H,O,N,key))
-    print('%s -------------------------------------------------------'%(O))
  #   print(" %s[%s+%s] %sTgl. Lahir  : %s"%(O,H,O,N,ttl))
-    print('%s-------------------------------------------------------'%(O))
-    print(" %s[%s+%s] %sMasa berlaku :|%s-%s"%(O,H,O,N,buulan,ttgal))
-    print(" %s[%s+%s] %sIP address   :|%s"%(O,H,O,N,IP_address))
-    print(" %s[%s+%s] %sNegara Anda  :|%s"%(O,H,O,N,negara))
-    print('%s-------------------------------------------------------'%(O))
-    print(" %s[%s1%s]. %scrack teman/publik|"%(O,H,O,N))
-    print('%s -------------------------------------------------------'%(O))
-    print(" %s[%s2%s]. %sCrack Masaal [%s10%s]|"%(O,H,O,N,H,N))
-    print('%s -------------------------------------------------------'%(O))
-    print(" %s[%s3%s]. %sCrack Follow publik|"%(O,H,O,N))
-    print('%s------------------------------------------------------- '(O))
-    print(" %s[%s4%s]. %ssetting user agent|"%(O,H,O,N))
-    print('%s -------------------------------------------------------'(O))
-    print(" %s[%s5%s]. %sGed data target|"%(O,H,O,N))
-    print('%s-------------------------------------------------------'(O))
-    print(" %s[%s6%s]. %sInfo Script Crack Fb|"%(O,H,O,N))
-    print('%s -------------------------------------------------------'(O))
-    print(" %s[%s7%s]. %scek opsi akun cp|"%(O,H,O,N))
-    print('%s-------------------------------------------------------'(O))
-    print(" %s[%s8%s]. %slihat hasil crack|"%(O,H,O,N))
-    print('%s-------------------------------------------------------'(O))
-    print(" %s[%s0%s]. %slogout %s(%shapus token%s)|"%(O,H,O,N,O,M,O))
-    print('%s -------------------------------------------------------'%(O))
+    print('%sÏ€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€'%(O))
+    print(" %s[%s+%s] %sMasa berlaku : %s-%s"%(O,H,O,N,buulan,ttgal))
+    print(" %s[%s+%s] %sIP address   : %s"%(O,H,O,N,IP_address))
+    print(" %s[%s+%s] %sNegara Anda  : %s"%(O,H,O,N,negara))
+    print('%sÏ€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€'%(O))
+    print(" %s[%s1%s]. %scrack teman/publik"%(O,H,O,N))
+    print('%s ----------------------------------------------------------
+    print(" %s[%s2%s]. %sCrack Masaal                     |[%s10%s]"%(O,H,O,N,H,N))
+    print('%s----------------------------------------------------------
+    print(" %s[%s3%s]. %sCrack Follow publik     |"%(O,H,O,N))
+    print('%s ----------------------------------------------------------
+    print(" %s[%s4%s]. %ssetting user agent.    |"%(O,H,O,N))
+    print('%s----------------------------------------------------------
+    print(" %s[%s5%s]. %sGed data target.   |"%(O,H,O,N))
+    print('%s ----------------------------------------------------------
+    print(" %s[%s6%s]. %sInfo Script Crack Fb.  |"%(O,H,O,N))
+    print('%s----------------------------------------------------------
+    print(" %s[%s7%s]. %scek opsi akun cp.     |"%(O,H,O,N))
+    print('%s ----------------------------------------------------------
+    print(" %s[%s8%s]. %slihat hasil crack.      |"%(O,H,O,N))
+    print('%s----------------------------------------------------------
+    print(" %s[%s0%s]. %slogout %s(%shapus token%s)"%(O,H,O,N,O,M,O))
+    print('%sÏ€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€Ï€'%(O))
     asw = input(" %s[%s?%s] %spilih menu : %s"%(O,H,O,N,H))
     if asw == "":
     	menu()
@@ -1037,7 +1033,7 @@ def graph(uid, pwx):
 				break
 			elif "t" in opsi:
 				try:
-					token = open(token.txt, "r").read()
+					token = open("token.txt", "r").read()
 					ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token)).json()["birthday"]
 					month, day, year = ttl.split("/")
 					month = bulan[month]
@@ -1247,5 +1243,5 @@ def ceker(uid,pw,ua):
 		print("\r %s[CP] %s|%s        "%(K,uid, pw))
 
 if __name__=='__main__':
-	os.system('git pull)
+	os.system('git pull')
 	menu()
