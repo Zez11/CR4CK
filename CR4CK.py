@@ -171,7 +171,7 @@ ____        __  ______  ____
 def tokenz():
 	os.system('clear')
 	try:
-		token = open('token.txt', 'r')
+		token = open(token.txt, 'r')
 		menu()
 	except (KeyError, IOError):
 		os.system('clear')
@@ -181,7 +181,7 @@ def tokenz():
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
 			a = json.loads(otw.text)
-			zedd = open('token.txt', 'w')
+			zedd = open(token.txt, 'w')
 			zedd.write(token)
 			zedd.close()
 			bot()
@@ -213,7 +213,7 @@ def menu():
     global token
     os.system('clear')
     try:
-        token = open('token.txt', 'r').read()
+        token = open(token.txt, 'r').read()
         otw = requests.get('https://graph.facebook.com/me/?access_token=' + token)
         a = json.loads(otw.text)
         mbokey = a['name']
@@ -223,7 +223,7 @@ def menu():
         os.system('clear')
         print("\n %s[!] token kadaluwarsa!"%(M))
         os.system('rm -f token.txt')
-        tokenz()
+        token()
     except requests.exceptions.ConnectionError:
         exit(" %s[!] anda tidak terhubung ke internet!"%(M))
 
@@ -249,7 +249,7 @@ def menu():
     print(" %s[%s2%s]. %sCrack Masaal [%s10%s]|"%(O,H,O,N,H,N))
     print('%s -------------------------------------------------------'%(O))
     print(" %s[%s3%s]. %sCrack Follow publik|"%(O,H,O,N))
-    print('%s -------------------------------------------------------'(O))
+    print('%s------------------------------------------------------- '(O))
     print(" %s[%s4%s]. %ssetting user agent|"%(O,H,O,N))
     print('%s -------------------------------------------------------'(O))
     print(" %s[%s5%s]. %sGed data target|"%(O,H,O,N))
@@ -1037,7 +1037,7 @@ def graph(uid, pwx):
 				break
 			elif "t" in opsi:
 				try:
-					token = open("token.txt", "r").read()
+					token = open(token.txt, "r").read()
 					ttl = ses.get("https://graph.facebook.com/%s?access_token=%s"%(uid, token)).json()["birthday"]
 					month, day, year = ttl.split("/")
 					month = bulan[month]
