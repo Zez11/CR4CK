@@ -213,7 +213,7 @@ def menu():
     global token
     os.system('clear')
     try:
-        token = open(token.txt, 'r').read()
+        token = open(tokenz.txt, 'r').read()
         otw = requests.get('https://graph.facebook.com/me/?access_token=' + token)
         a = json.loads(otw.text)
         mbokey = a['name']
@@ -1247,5 +1247,5 @@ def ceker(uid,pw,ua):
 		print("\r %s[CP] %s|%s        "%(K,uid, pw))
 
 if __name__=='__main__':
-	os.system('git pull')
+	os.system('git pull)
 	menu()
